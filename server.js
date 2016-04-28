@@ -21,7 +21,7 @@ app.get('/login', middleware.logger, function(req, res){
 app.use(middleware.logger);
 
 app.get('/about', middleware.requireAutenthication, function(req, res){
-	res.send('About us!');
+	res.send('About us!!!');
 });
 
 app.use(express.static(__dirname + '/public'));
